@@ -65,6 +65,8 @@ Download `kubecfg` pre-built binaries by following the instructions at the botto
 
 With any luck you'll now have a fully operational Kubernetes cluster running on Digital Ocean.  To test it type `kubecfg list minions`.  You should see all three private ip addresses of your cluster listed in the result.
 
+### Thanks/Credit
 
+I couldn't have gotten the cluster running without lots of debugging help from Kelsey Hightower.  I also drew a lot of inspriation from [this post](https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fqiita.com%2Fyungsang%2Fitems%2F530ae3d3277d2fba3343&edit-text=&act=url)
 
 
