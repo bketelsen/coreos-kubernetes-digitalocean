@@ -1,0 +1,20 @@
+[Unit]
+After=etcd.service
+After=download-kubernetes.service
+ConditionFileIsExecutable=/opt/bin/apiserver
+Description=Kubernetes API Server
+Documentation=https://github.com/GoogleCloudPlatform/kubernetes
+Wants=etcd.service
+Wants=download-kubernetes.service
+
+[Service]
+ExecStart=/opt/bin/apiserver \
+--address=0.0.0.0 \
+--port=8080 \
+--etcd_servers=http://127.0.0.1:4001 \
+--machines=10.132.245.174,10.132.245.177,10.132.245.179 \
+--logtostderr=true
+Restart=always
+RestartSec=10
+[Install]
+WantedBy=multi-user.target

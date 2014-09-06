@@ -1,0 +1,10 @@
+[Unit]
+Requires=etcd.service
+After=etcd.service
+
+[Service]
+ExecStartPre=-/usr/bin/etcdctl set /coreos.com/network/config '{"Network":"10.100.0.0/16"}'
+ExecStart=/opt/bin/rudder -iface=10.132.245.179
+
+[Install]
+WantedBy=multi-user.target
