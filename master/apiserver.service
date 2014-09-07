@@ -1,11 +1,9 @@
 [Unit]
 After=etcd.service
-After=download-kubernetes.service
 ConditionFileIsExecutable=/opt/bin/apiserver
 Description=Kubernetes API Server
 Documentation=https://github.com/GoogleCloudPlatform/kubernetes
 Wants=etcd.service
-Wants=download-kubernetes.service
 
 [Service]
 ExecStart=/opt/bin/apiserver \
