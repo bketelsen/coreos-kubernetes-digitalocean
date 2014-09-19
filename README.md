@@ -28,7 +28,7 @@ Yours might look like this:
 
 ## Step 4
 
-Install [Rudder](https://github.com/coreos/rudder) so that each pod in the Kubernetes cluster can have it's own IP address.
+Install [Flannel](https://github.com/coreos/flannel) so that each pod in the Kubernetes cluster can have it's own IP address.
 
 On one of the CoreOS machines, checkout the [Rudder source](https://github.com/coreos/rudder.git) and follow the [instructions](https://github.com/coreos/rudder#building-rudder) to use their docker container to build Rudder.
 
