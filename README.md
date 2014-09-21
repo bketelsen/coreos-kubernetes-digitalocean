@@ -59,6 +59,8 @@ Follow this same pattern to add `docker`, `kubelet`, and `proxy` services to all
 
 On the master, add `apiserver` and `controller-manager`.  In the `apiserver.service` file, list the private IP addresses of all three CoreOS machines on [Line 15](https://github.com/bketelsen/coreos-kubernetes-digitalocean/blob/master/master/apiserver.service#L15u)
 
+*** Important - you need to add a scheduler service now, too.  I'll try to add a service unit for this shortly. ***
+
 ## Step 8
 
 Download `kubecfg` pre-built binaries by following the instructions at the bottom of [Kelsey Hightower's Guide](https://github.com/kelseyhightower/kubernetes-coreos)  I put mine in /opt/bin
