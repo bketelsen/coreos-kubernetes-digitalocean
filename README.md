@@ -1,6 +1,8 @@
 coreos-kubernetes-digitalocean
 ==============================
 
+[These notes are now 25 days old -- a lifetime in a fast moving project like Kubernetes.  Check the Kubernetes Github repo for more up-to-date instructions before attempting to follow this.]
+
 Configuration for running Kubernetes/CoreOS/Rudder on Digital Ocean
 
 ## Use this guide to get a Kubernetes cluster running on CoreOS linux on your Digital Ocean account.
